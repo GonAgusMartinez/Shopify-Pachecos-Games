@@ -1,0 +1,53 @@
+{{ 'header.css' | asset_url | stylesheet_tag }}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+</head>
+<body>
+    <header class="header">
+        <a href="https://tzgcc3-im.myshopify.com/" class="logo">
+            <img src="https://cdn.shopify.com/s/files/1/0727/8837/7848/files/PACHECOS.png?v=1731956621" class="img-logo-header" alt="Logo">
+        </a>
+        <nav class="navbar">
+            <form method="get" action="/search" role="search" class="search-bar">
+                <input type="search" name="q" placeholder="Search products" aria-label="Search products" required class="search-bar-input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+
+            <!-- Menú de navegación -->
+            <ul class="nav-menu">
+                <!-- Menú desplegable de categorías -->
+                <li class="menu-desplegable">
+                    <a class="navbar-item-desplegable" href="/collections">Categories</a>
+                    <ul class="dropdown">
+                        <li><a href="https://tzgcc3-im.myshopify.com/collections/pc">PC</a></li>
+                        <li><a href="https://tzgcc3-im.myshopify.com/collections/peripherals">Peripherals</a></li>
+                        <li><a href="https://tzgcc3-im.myshopify.com/collections/console">Console</a></li>
+                        <li><a href="https://tzgcc3-im.myshopify.com/collections/components">Componentes</a></li>
+                        <li><a href="https://tzgcc3-im.myshopify.com/collections/gaming-chair">Gaming Chair</a></li>
+                        <li><a href="https://tzgcc3-im.myshopify.com/collections/monitors">Monitors</a></li>
+                    </ul>
+                </li>
+                <li><a class="navbar-item" href="#">About Us</a></li>
+                <li><a class="navbar-item" href="#">Contact</a></li>
+            </ul>
+
+            <!-- Ícono del carrito -->
+            <a href="/cart" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <!-- Menú hamburguesa -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <script src="{{ 'header.js' | asset_url }}"></script>
+</body>
+</html>

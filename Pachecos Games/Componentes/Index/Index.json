@@ -1,0 +1,94 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+    "sections": {
+        "featured_collection": {
+            "type": "featured-collection",
+            "disabled": true,
+            "settings": {
+                "title": "Featured products",
+                "heading_size": "h2",
+                "description": "",
+                "show_description": false,
+                "description_style": "body",
+                "collection": "all",
+                "products_to_show": 8,
+                "columns_desktop": 4,
+                "full_width": false,
+                "show_view_all": true,
+                "view_all_style": "solid",
+                "enable_desktop_slider": false,
+                "color_scheme": "scheme-1",
+                "image_ratio": "adapt",
+                "image_shape": "default",
+                "show_secondary_image": true,
+                "show_vendor": false,
+                "show_rating": false,
+                "quick_add": "none",
+                "columns_mobile": "2",
+                "swipe_on_mobile": false,
+                "padding_top": 44,
+                "padding_bottom": 36
+            }
+        },
+        "collection_list_GRBNfk": {
+            "type": "collection-list",
+            "blocks": {
+                "featured_collection_9tQD6M": {
+                    "type": "featured_collection",
+                    "settings": {
+                        "collection": "nintendo-offer"
+                    }
+                },
+                "featured_collection_Tdi788": {
+                    "type": "featured_collection",
+                    "settings": {
+                        "collection": "keyboards-mouse-offer"
+                    }
+                },
+                "featured_collection_y7gHVn": {
+                    "type": "featured_collection",
+                    "settings": {
+                        "collection": "gaming-chair"
+                    }
+                },
+                "featured_collection_4bXNmn": {
+                    "type": "featured_collection",
+                    "settings": {
+                        "collection": ""
+                    }
+                }
+            },
+            "block_order": [
+                "featured_collection_9tQD6M",
+                "featured_collection_Tdi788",
+                "featured_collection_y7gHVn",
+                "featured_collection_4bXNmn"
+            ],
+            "disabled": true,
+            "settings": {
+                "title": "Colecciones",
+                "heading_size": "h1",
+                "image_ratio": "square",
+                "columns_desktop": 3,
+                "color_scheme": "",
+                "show_view_all": false,
+                "columns_mobile": "1",
+                "swipe_on_mobile": false,
+                "padding_top": 36,
+                "padding_bottom": 36
+            }
+        }
+    },
+    "order": [
+        "featured_collection",
+        "collection_list_GRBNfk"
+    ]
+}

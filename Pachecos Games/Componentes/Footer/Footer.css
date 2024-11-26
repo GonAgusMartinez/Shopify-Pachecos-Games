@@ -1,0 +1,135 @@
+/* Títulos */
+.footer-col h4 {
+    font-size: 18px;
+    color: #222;
+    /* Color oscuro para los títulos */
+    text-transform: capitalize;
+    /* Primera letra en mayúscula */
+    margin-bottom: 30px;
+    font-weight: 600;
+    /* Fuente más gruesa */
+    position: relative;
+}
+
+/* Subrayado decorativo para los títulos */
+.footer-col h4::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    /* Posición bajo el texto */
+    left: 50%;
+    /* Centra el subrayado */
+    transform: translateX(-50%);
+    /* Ajuste para centrar */
+    width: 50%;
+    /* Largo del subrayado */
+    height: 2px;
+    /* Grosor de la línea */
+    background-color: #222;
+    /* Color de la línea */
+}
+
+/* Logos de redes sociales */
+.footer-col .social-links a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #222;
+    /* Fondo negro */
+    color: #eee;
+    /* Íconos en blanco */
+    justify-content: center;
+    line-height: 30px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    /* Redondea los logos */
+    margin: 0 5px;
+    /* Separación entre los logos */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    /* Animación suave */
+}
+
+/* Hover individual en los logos */
+.footer-col .social-links a:hover {
+    background-color: #eee;
+    /* Fondo blanco al pasar el mouse */
+    color: #222;
+    /* Ícono negro */
+    border: solid 1px #000;
+}
+
+/* Contenedor principal del footer */
+.footer {
+    background-color: #eee;
+    /* Fondo gris claro */
+    color: #000;
+    /* Texto negro */
+    padding: 70px 0;
+}
+
+/* Ajuste para las columnas */
+.footer-col {
+    flex: 1 1 25%;
+    /* Cada columna ocupa el 25% del ancho */
+    max-width: 25%;
+    padding: 0 15px;
+    /* Espaciado lateral */
+    box-sizing: border-box;
+    text-align: center;
+    /* Centra el contenido bajo el título */
+}
+
+/* Listas dentro de las columnas */
+.footer-col ul {
+    list-style: none;
+    /* Elimina los puntos de lista */
+    padding: 0;
+    margin: 0;
+    /* Elimina márgenes adicionales */
+}
+
+/* Elementos de la lista */
+.footer-col ul li {
+    margin-bottom: 20px;
+    /* Espacio entre cada elemento */
+}
+
+/* Enlaces dentro de la lista */
+.footer-links {
+    display: block;
+    /* Asegura que cada enlace ocupe una línea completa */
+    font-size: 15px;
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    /* Cambia solo el color */
+}
+
+/* Hover en los enlaces */
+.footer-links:hover {
+    color: #000;
+    /* Cambia a gris más oscuro al pasar el ratón */
+}
+
+/* Flexbox para las columnas */
+.row {
+    display: flex;
+    /* Habilita Flexbox */
+    flex-wrap: wrap;
+    /* Permite que las columnas bajen si no caben */
+    justify-content: space-between;
+    /* Espacia las columnas de manera uniforme */
+    align-items: flex-start;
+    /* Alinea las columnas al inicio */
+}
+
+/* Responsividad: Ajuste en pantallas pequeñas */
+@media (max-width: 720px) {
+    .footer-col {
+        flex: 1 1 50%;
+        /* Cada columna ocupa el 50% del ancho */
+        max-width: 50%;
+        margin-bottom: 30px;
+        /* Espacio entre columnas */
+    }
+}
